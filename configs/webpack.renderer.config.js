@@ -27,10 +27,14 @@ module.exports = (env, argv) => {
     },
     module: {
       rules: [
-        // {
-        //   test: /\.html$/,
-        //   loader: HtmlWebpackPlugin.loader,
-        // },
+        {
+          test: /\.html$/,
+          loader: 'html-loader',
+        },
+        {
+          test: /\.(js)$/,
+          exclude: /node_modules/,
+        },
         {
           test: /\.(scss|css)$/,
           use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],

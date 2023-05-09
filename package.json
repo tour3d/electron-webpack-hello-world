@@ -2,7 +2,7 @@
   "name": "electron-webpack-hello-world",
   "version": "1.0.0",
   "description": "A simple Hello World app using Electron and Webpack",
-  "main": "dist/main/index.js",
+  "main": "src/main/index.js",
   "scripts": {
     "start:renderer": "webpack serve --config configs/webpack.renderer.config.js --mode development",
     "start:main": "set NODE_ENV=development&&set ELECTRON_DISABLE_SECURITY_WARNINGS=true&&electron .",
